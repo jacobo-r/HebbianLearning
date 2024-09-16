@@ -14,7 +14,7 @@ import time
 from datetime import datetime, timedelta
 import sys
 
-# this version of the code was created to correct the dumb mistake of the correlation weight : instead of [-1,1] now we do this +/- 1
+# this version of the code was created to correct the mistake of the correlation weight : instead of [-1,1] now we do this +/- 1
 # in order to augment the desired updates (meaning if threshold =0 , then coeff belogns to [-2,-1] U [1,2])
 # So here we are just doing that and we are also storing the correlation statistics to see how correlated inputs are :)
 # Maybe ther are too correlated and hence we are just multiplying by the same number the whole thing = bad
